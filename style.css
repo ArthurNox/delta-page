@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  top: 0px;
+  left: -14px;
+  width: 100%;
+  height: 4.375rem;
+  background: #000000;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 9.5625rem;
+}
+
+.menu {
+  margin-right: 9.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.menu-button {
+  width: 29px;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.menu-button::before,
+.menu-button::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.menu-button::before {
+  width: 29px;
+  transform: translateY(-16px);
+}
+
+.menu-button::after {
+  width: 19px;
+  transform: translateY(16px);
+  margin-left: 10px;
+}
+
+nav {
+  width: 19.875rem;
+  height: 77.875rem;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+  visibility: hidden;
+  background: #ffc502;
+  color: #000000;
+
+  text-align: left;
+  font: normal normal bold 22px/26px Arial;
+  letter-spacing: 0px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  margin: 1rem;
+  cursor: pointer;
+}
+.menu-itens {
+  margin: 3rem;
+  top: 122px;
+  left: 1239px;
+  width: 204px;
+  height: 282px;
+
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 3.375rem;
+  cursor: pointer;
+}
+
+.top-section {
+  background-image: url(./assets/road.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  height: 50%;
+  /* position: relative; */
+  background-color: #000000;
+}
+
+.content {
+  top: 206px;
+  left: 150px;
+  width: 595px;
+  height: 175px;
+
+  margin: 136px 0px 40px 9.5625rem;
+
+  font-size: 43px;
+  color: #ffffff;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  width: 149px;
+  height: 20px;
+  background: #ffc502;
+  transform: translateY(16px);
+}
+
+.botton-section {
+  background: #ffc502;
+  height: 50%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-carrousel {
+  background-color: #ffffff;
+  letter-spacing: 0px;
+  width: 700px;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.img-carrousel {
+  background-image: url(./assets/c1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 700px;
+  height: 300px;
+}
