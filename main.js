@@ -21,3 +21,9 @@ OPEN_BUTTON.onclick = function(){
   DOWN.style.opacity = "0.5";
 
 };
+
+
+const PREV = document.querySelector('.previus')
+const NEXT = document.querySelector('.next')
+
+
