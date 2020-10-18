@@ -34,7 +34,7 @@
     <section class="botton-section">
       <div class="slides">
         <div class="slide-one">
-          <div class="left-slide">
+          <div class="left-content">
             <img src='assets/truck.svg' />
             <h2>Carrousel 1</h2>
             <p>
@@ -42,15 +42,20 @@
               aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
             </p>
           </div>
-          <div class="right-slide">
-            <img src="assets/c1.png">
-            <img src="assets/left-and-right-arrows.svg" class="next">
-            <img src="assets/left-and-right-arrows-1.svg"class="previus">
-            
+          <div class="right-content">
+            <img src="assets/c1.png" class="picture">
+            <div class="navigation">
+              <div class="buttons next" onclick="plusSlides(-1)">
+                <img src="assets/left-and-right-arrows.svg">
+              </div>
+              <div class="buttons previus" onclick="plusSlides(1)">
+                <img src="assets/left-and-right-arrows-1.svg" >
+              </div>  
+            </div>
           </div>
         </div>
         <div class="slide-two" style="display: none;">
-          <div class="left-slide">
+          <div class="left-content">
             <img src='assets/truck.svg' />
             <h2>Carrousel 2</h2>
             <p>
@@ -58,12 +63,20 @@
               sed diam voluptua. At vero eos et accusam et justo duo
             </p>
           </div>
-          <div class="right-slide">
-      
+          <div class="right-content">
+            <img src="assets/c2.png" class="picture">
+            <div class="navigation">
+              <div class="buttons next" onclick="plusSlides(-1)">
+                <img src="assets/left-and-right-arrows.svg">
+              </div>
+              <div class="buttons previus" onclick="plusSlides(1)">
+                <img src="assets/left-and-right-arrows-1.svg" >
+              </div>  
+            </div>
           </div>
         </div>
         <div class="slide-three" style="display: none;">
-          <div class="left-slide" >
+          <div class="left-content" >
             <img src='assets/maps-and-location.svg' />
             <h2>Carrousel 3</h2>
             <p>
@@ -71,12 +84,19 @@
               sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
             </p>
           </div>
-          <div class="right-slide">
-            
+          <div class="right-content">
+            <img src="assets/c3.png" class="picture">
+            <div class="navigation">
+              <div class="buttons next" onclick="plusSlides(-1)">
+                <img src="assets/left-and-right-arrows.svg">
+              </div>
+              <div class="buttons previus" onclick="plusSlides(1)">
+                <img src="assets/left-and-right-arrows-1.svg" >
+              </div>  
+            </div>
           </div>
         </div>
       </div>
-      
     </section>
     <script src="main.js"></script>
   </body>
