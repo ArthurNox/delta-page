@@ -30,16 +30,14 @@ const ONE = document.querySelector('.slide-one')
 const TWO = document.querySelector('.slide-two')
 const THREE = document.querySelector('.slide-three')
 
-let index = 0
+let index = 1
 
 function plusSlides(n) {
   index = index + n
 
-  if(index < 0){
-    console.log('zero')
+  if(index <= 0){
     index = 3
   } else if(index > 3){
-    console.log('quattro')
     index = 1
   }
   console.log(index)
@@ -48,10 +46,12 @@ function plusSlides(n) {
     ONE.style.display = 'flex'
     TWO.style.display = 'none'
     THREE.style.display = 'none'
+
   } else if (index == 2) {
     ONE.style.display = 'none'
     TWO.style.display = 'flex'
     THREE.style.display = 'none'
+
   } else if (index == 3) {
     ONE.style.display = 'none'
     TWO.style.display = 'none'
